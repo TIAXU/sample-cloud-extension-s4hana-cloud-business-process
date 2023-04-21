@@ -1,0 +1,11 @@
+---
+applications:
+- name: geo
+  path: georel
+  memory: 128M
+  env:
+    RELEVANT_COUNTRY: 'US'
+  services:
+    - <event-mesh-instance>
+    - <destination-instance>
+    - <xsuaa-instance>
