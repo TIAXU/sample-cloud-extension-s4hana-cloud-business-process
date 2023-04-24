@@ -284,7 +284,7 @@ function _computeBackendUrl(bupaId) {
     let backendUrl = ''
 
     try {
-        const s4hRootUrl = JSON.parse(process.env.VCAP_SERVICES)['s4-hana-cloud'][0].credentials.URL //"https://my300018.saps4hanacloud.cn"
+        const s4hRootUrl = JSON.parse(process.env.VCAP_SERVICES)['s4-hana-cloud'][0].credentials.URL
         const path = 'sap/opu/odata/sap'
         const api = 'API_BUSINESS_PARTNER'
         const entitySet = 'A_BusinessPartner'
